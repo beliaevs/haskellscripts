@@ -1,5 +1,5 @@
-import Data.List
-import System.Environment
+import Data.List ( foldl' )
+import System.Environment ( getArgs )
 
 main :: IO ()
 main = do
