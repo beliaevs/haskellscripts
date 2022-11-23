@@ -1,0 +1,8 @@
+digraph types {
+    Eq -> {Bool Word Ordering Int Integer Float Double Char "()", "(a, b)"}
+    Num -> {Word Integer Int Float Double}
+    Fractional -> {Float Double}
+    Fractional -> Num [style=dotted]
+    Ord -> Eq [style=dotted]
+    Real -> {Num, Ord} [style=dotted]
+}
